@@ -67,15 +67,6 @@ class PDF extends FPDF {
 
 	}	
 
-	function bottom(){
-    // Position at 1.5 cm from bottom
-		$this->SetY(-15);
-    // Arial italic 8
-		$this->SetFont('Arial','I',7);
-    // Page number
-		$this->Cell(0,10,'Hal. '.$this->PageNo().'/{nb}',0,0,'C');
-	}
-
 	function data(){
 
 		include('koneksi.php');

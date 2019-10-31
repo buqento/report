@@ -63,15 +63,6 @@ class PDF extends FPDF {
 
 	}	
 
-	function Footer(){
-    // Position at 1.5 cm from bottom
-		$this->SetY(-15);
-    // Arial italic 8
-		$this->SetFont('Arial','I',6);
-    // Page number
-		// $this->Cell(0,10,'Hal. '.$this->PageNo().'/{nb}',0,0,'C');
-	}
-
 	function tampilPaket($w, $h, $x, $t, $indent){
 		$height = $h/3;
 		$first = $height +2;
